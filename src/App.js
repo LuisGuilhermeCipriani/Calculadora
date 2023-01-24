@@ -1,42 +1,56 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './estilo.css';
 
 function App() {
+
+const [display, setDisplay] = useState();
+
+useEffect(() => {
+  setDisplay('');
+},[]);
+
+function onoff(){
+  if(display === ''){
+    setDisplay(0);
+  }else{
+    setDisplay('');
+  }
+}
+
   return (
 
     <div className='container'>
       <h1>Calculadora</h1>
       <img src={require('./assets/Calculadora.png')} className='img' alt='Calculadora' />
-      <a className='display'>0</a>
+      <a className='display'>{display}</a>
       <div className='botoes'>
         <div className='fileira1'>
-          <a className='onoff'></a>
+          <a className='onoff' onClick={onoff}></a>
         </div>
         <div className='fileira2'>
-          <a className='btn7'></a>
-          <a className='btn8'></a>
-          <a className='btn9'></a>
-          <a className='btnDivisao'></a>
+          <a className='btn7' onClick={onoff}></a>
+          <a className='btn8' onClick={onoff}></a>
+          <a className='btn9' onClick={onoff}></a>
+          <a className='btnDivisao' onClick={onoff}></a>
         </div>
         <div className='fileira3'>
-          <a className='btn4'></a>
-          <a className='btn5'></a>
-          <a className='btn6'></a>
-          <a className='btnMultiplicacao'></a>
+          <a className='btn4' onClick={onoff}></a>
+          <a className='btn5' onClick={onoff}></a>
+          <a className='btn6' onClick={onoff}></a>
+          <a className='btnMultiplicacao' onClick={onoff}></a>
         </div>
         <div className='fileira4'>
-          <a className='btn3'></a>
-          <a className='btn2'></a>
-          <a className='btn1'></a>
-          <a className='btnSubtracao'></a>
+          <a className='btn3' onClick={onoff}></a>
+          <a className='btn2' onClick={onoff}></a>
+          <a className='btn1' onClick={onoff}></a>
+          <a className='btnSubtracao' onClick={onoff}></a>
         </div>
         <div className='fileira5'>
-          <a className='btn0'></a>
-          <a className='btnPonto'></a>
-          <a className='btnIgual'></a>
-          <a className='btnSoma'></a>
+          <a className='btn0' onClick={onoff}></a>
+          <a className='btnPonto' onClick={onoff}></a>
+          <a className='btnIgual' onClick={onoff}></a>
+          <a className='btnSoma' onClick={onoff}></a>
         </div>
-
       </div>
     </div>
   );
