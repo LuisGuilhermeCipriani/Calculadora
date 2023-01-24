@@ -1,0 +1,244 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    width: 400px;
+    height: 550px;
+}
+
+.display{
+    font-size: 50px;
+    margin-top: -525px;
+    margin-left: 250px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    width: 26.3%;
+    height: 410px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 35px;
+}
+
+.fileira1{
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fileira2{
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.fileira3{
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.fileira4{
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.fileira5{
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.onoff{
+    cursor: pointer;
+    margin-bottom: 160px;
+    width: 100px;
+    height: 72px;
+    margin-left: 298px;
+    padding-bottom: 54px;
+    padding-right: 83px;
+}
+
+.btn0{
+    cursor: pointer;
+    margin-bottom: 80px;
+    width: 100px;
+    height: 72px;
+    margin-left: 22px;
+    padding-bottom: 56px;
+    padding-right: 83px;
+}
+
+.btn1{
+    cursor: pointer;
+    margin-bottom: 80px;
+    width: 100px;
+    height: 72px;
+    margin-left: 9px;
+    padding-bottom: 60px;
+    padding-right: 83px;
+}
+
+.btn2{
+    cursor: pointer;
+    margin-bottom: 80px;
+    width: 100px;
+    height: 72px;
+    margin-left: 10px;
+    padding-bottom: 60px;
+    padding-right: 83px;
+}
+
+.btn3{
+    cursor: pointer;
+    margin-bottom: 80px;
+    width: 100px;
+    height: 72px;
+    margin-left: 22px;
+    padding-bottom: 60px;
+    padding-right: 83px;
+}
+
+.btn4{
+    cursor: pointer;
+    margin-bottom: 110px;
+    width: 100px;
+    height: 72px;
+    margin-left: 22px;
+    padding-bottom: 54px;
+    padding-right: 83px;
+}
+
+.btn5{
+    cursor: pointer;
+    margin-bottom: 110px;
+    width: 100px;
+    height: 72px;
+    margin-left: 10px;
+    padding-bottom: 54px;
+    padding-right: 83px;
+}
+
+.btn6{
+    cursor: pointer;
+    margin-bottom: 110px;
+    width: 100px;
+    height: 72px;
+    margin-left: 9px;
+    padding-bottom: 54px;
+    padding-right: 83px;
+}
+
+.btn7{
+    cursor: pointer;
+    margin-bottom: 160px;
+    width: 100px;
+    height: 72px;
+    margin-left: 22px;
+    padding-bottom: 54px;
+    padding-right: 83px;
+}
+
+.btn8{
+    cursor: pointer;
+    margin-bottom: 160px;
+    width: 100px;
+    height: 72px;
+    margin-left: 10px;
+    padding-bottom: 54px;
+    padding-right: 83px;
+}
+
+.btn9{
+    cursor: pointer;
+    margin-bottom: 160px;
+    width: 100px;
+    height: 72px;
+    margin-left: 9px;
+    padding-bottom: 54px;
+    padding-right: 83px;
+}
+
+.btnDivisao{
+    cursor: pointer;
+    margin-bottom: 160px;
+    width: 100px;
+    height: 72px;
+    margin-left: 9px;
+    padding-bottom: 54px;
+    padding-right: 83px;
+}
+
+.btnMultiplicacao{
+    cursor: pointer;
+    margin-bottom: 160px;
+    width: 100px;
+    height: 72px;
+    margin-left: 9px;
+    padding-bottom: 54px;
+    padding-right: 83px;
+}
+
+.btnSubtracao{
+    cursor: pointer;
+    margin-bottom: 80px;
+    width: 100px;
+    height: 72px;
+    margin-left: 9px;
+    padding-bottom: 60px;
+    padding-right: 83px;
+}
+
+.btnPonto{
+    cursor: pointer;
+    margin-bottom: 80px;
+    width: 100px;
+    height: 72px;
+    margin-left: 10px;
+    padding-bottom: 56px;
+    padding-right: 83px;
+}
+
+.btnIgual{
+    cursor: pointer;
+    margin-bottom: 80px;
+    width: 100px;
+    height: 72px;
+    margin-left: 9px;
+    padding-bottom: 56px;
+    padding-right: 83px;
+}
+
+.btnSoma{
+    cursor: pointer;
+    margin-bottom: 80px;
+    width: 100px;
+    height: 72px;
+    margin-left: 9px;
+    padding-bottom: 56px;
+    padding-right: 83px;
+}
