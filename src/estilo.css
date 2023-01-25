@@ -48,8 +48,10 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100px;
+    height: 80px;
     border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .valor{
@@ -63,10 +65,10 @@
 
 .btn1{
     width: 100%;
-    height: 90px;
+    height: 80px;
     background-color: #4d4d4d;
     color: #fff;
-    font-size: 60px;
+    font-size: 55px;
     text-align: center;
     border-color: #000;
     border-radius: 20px;
@@ -74,14 +76,20 @@
     margin-left: 5px;
     margin-right: 5px;
     cursor: pointer;
+}
+
+.btn1:hover{
+    opacity: 0.7;
+    transition: all 0.3s;
+    color: #000;
 }
 
 .btn2{
     width: 100%;
-    height: 90px;
+    height: 80px;
     background-color: #bfbfbf;
     color: #fff;
-    font-size: 60px;
+    font-size: 55px;
     text-align: center;
     border-color: #000;
     border-radius: 20px;
@@ -90,14 +98,20 @@
     margin-right: 5px;
     cursor: pointer;
     text-shadow: #000 0px 0px 1px;
+}
+
+.btn2:hover{
+    opacity: 0.7;
+    transition: all 0.3s;
+    color: #000;
 }
 
 .btn3{
     width: 100%;
-    height: 90px;
+    height: 80px;
     background-color: #ff7733;
     color: #fff;
-    font-size: 60px;
+    font-size: 55px;
     text-align: center;
     border-color: #000;
     border-radius: 20px;
@@ -106,14 +120,20 @@
     margin-right: 5px;
     cursor: pointer;
     text-shadow: #000 0px 0px 1px;
+}
+
+.btn3:hover{
+    opacity: 0.7;
+    transition: all 0.3s;
+    color: #000;
 }
 
 .btn4{
     width: 100%;
-    height: 90px;
+    height: 80px;
     background-color: #ff4d4d;
     color: #fff;
-    font-size: 60px;
+    font-size: 55px;
     text-align: center;
     border-color: #000;
     border-radius: 20px;
@@ -124,12 +144,18 @@
     text-shadow: #000 0px 0px 1px;
 }
 
+.btn4:hover{
+    opacity: 0.7;
+    transition: all 0.3s;
+    color: #000;
+}
+
 .btn5{
     width: 100%;
-    height: 90px;
+    height: 80px;
     background-color: #7e809a;
     color: #7e809a;
-    font-size: 60px;
+    font-size: 55px;
     text-align: center;
     border-color: #000;
     border-radius: 20px;
@@ -138,4 +164,10 @@
     margin-right: 5px;
     opacity: 0%;
     cursor: default;
+}
+
+.btn5:hover{
+    opacity: 0.7;
+    transition: all 0.3s;
+    color: #000;
 }
