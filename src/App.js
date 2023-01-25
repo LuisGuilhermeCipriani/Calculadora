@@ -6,7 +6,6 @@ function App() {
   const [valor, setValor] = useState('');
   const [operacao, setOperacao] = useState(false);
   const [resultado, setResultado] = useState(0);
-  const [armazenamento, setArmazenamento] = useState(0);
 
   const Display = (valor, resultado) => {
     return (
@@ -24,13 +23,13 @@ function App() {
   }
 
   const AdicionaDigito = (digito) => {
-    if((digito === '+' || digito === '-' || digito === '*' || digito === '/') && operacao){
+    if ((digito === '+' || digito === '-' || digito === '*' || digito === '/') && operacao) {
       setOperacao(false);
-      setValor(resultado+digito);
+      setValor(resultado + digito);
       return;
     }
 
-    if(operacao){
+    if (operacao) {
       setOperacao(false);
       setValor(digito);
       return;
@@ -41,18 +40,27 @@ function App() {
   }
 
   const Operacao = (oper) => {
-    try{
-      if(oper === '='){
+    try {
+      if (oper === '=') {
         setOperacao(true);
         let acao = eval(valor);
         setResultado(acao);
       }
 
-      if(oper === 'ac'){
+      if (oper === '<=') {
+        let valorDisplay = valor;
+        valorDisplay = valorDisplay.substring(0, (valorDisplay.length - 1));
+        setValor(valorDisplay);
+        setOperacao(false);
+        return;
+      }
+
+      if (oper === 'ac') {
         setValor('');
         setResultado(0);
       }
-    }catch{
+
+    } catch {
       setResultado('ERRO');
     }
   }
@@ -65,9 +73,9 @@ function App() {
         {Display(valor, resultado)}
         <div className='botoes'>
           <div className='fileira'>
-            {Botao('btn5', '', '')}
-            {Botao('btn5', '', '')}
-            {Botao('btn5', '', '')}
+            {Botao('btn4', '<=', () => Operacao('<='))}
+            {Botao('btn5', '(', () => AdicionaDigito('('))}
+            {Botao('btn5', ')', () => AdicionaDigito(')'))}
             {Botao('btn4', 'AC', () => Operacao('ac'))}
           </div>
           <div className='fileira'>
@@ -90,7 +98,7 @@ function App() {
           </div>
           <div className='fileira'>
             {Botao('btn1', '0', () => AdicionaDigito('0'))}
-            {Botao('btn2', '.', () => AdicionaDigito('.'))}
+            {Botao('btn5', '.', () => AdicionaDigito('.'))}
             {Botao('btn3', '=', () => Operacao('='))}
             {Botao('btn2', '+', () => AdicionaDigito('+'))}
           </div>
