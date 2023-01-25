@@ -23,6 +23,23 @@ function App() {
     )
   }
 
+  const AdicionaDigito = (digito) => {
+    if((digito === '+' || digito === '-' || digito === '*' || digito === '/') && operacao){
+      setOperacao(false);
+      setValor(resultado+digito);
+      return;
+    }
+
+    if(operacao){
+      setOperacao(false);
+      setValor(digito);
+      return;
+    }
+
+    const valorDigitado = valor + digito;
+    setValor(valorDigitado);
+  }
+
   return (
 
     <div className='container'>
@@ -37,28 +54,28 @@ function App() {
             {Botao('btn4', 'AC', '')}
           </div>
           <div className='fileira'>
-            {Botao('btn1', '7', '')}
-            {Botao('btn1', '8', '')}
-            {Botao('btn1', '9', '')}
-            {Botao('btn2', '/', '')}
+            {Botao('btn1', '7', () => AdicionaDigito('7'))}
+            {Botao('btn1', '8', () => AdicionaDigito('8'))}
+            {Botao('btn1', '9', () => AdicionaDigito('9'))}
+            {Botao('btn2', '/', () => AdicionaDigito('/'))}
           </div>
           <div className='fileira'>
-            {Botao('btn1', '4', '')}
-            {Botao('btn1', '5', '')}
-            {Botao('btn1', '6', '')}
-            {Botao('btn2', '*', '')}
+            {Botao('btn1', '4', () => AdicionaDigito('4'))}
+            {Botao('btn1', '5', () => AdicionaDigito('5'))}
+            {Botao('btn1', '6', () => AdicionaDigito('6'))}
+            {Botao('btn2', '*', () => AdicionaDigito('*'))}
           </div>
           <div className='fileira'>
-            {Botao('btn1', '3', '')}
-            {Botao('btn2', '2', '')}
-            {Botao('btn3', '1', '')}
-            {Botao('btn2', '-', '')}
+            {Botao('btn1', '3', () => AdicionaDigito('3'))}
+            {Botao('btn2', '2', () => AdicionaDigito('2'))}
+            {Botao('btn3', '1', () => AdicionaDigito('1'))}
+            {Botao('btn2', '-', () => AdicionaDigito('-'))}
           </div>
           <div className='fileira'>
-            {Botao('btn1', '0', '')}
-            {Botao('btn2', '.', '')}
+            {Botao('btn1', '0', () => AdicionaDigito('0'))}
+            {Botao('btn2', '.', () => AdicionaDigito('.'))}
             {Botao('btn3', '=', '')}
-            {Botao('btn2', '+', '')}
+            {Botao('btn2', '+', () => AdicionaDigito('+'))}
           </div>
         </div>
       </div>
